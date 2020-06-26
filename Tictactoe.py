@@ -151,7 +151,7 @@ def game():
         drawing_shot(player, i, j,tab)
         plateau[(i, j)] = player
         if win_shot(plateau, player, i, j):
-            final_message(player + " A GAGNÉ !")
+            final_message(player + " A GAGNÉ !", player)
             break
         player = next_player(player)
     else:  # Only executed in the absence of break
